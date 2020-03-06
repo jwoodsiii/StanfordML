@@ -19,7 +19,7 @@ g = zeros(size(z));
 g = sigmoid(z) .* (1 - sigmoid(z));
 
 % Or we can recycle that code directly in this function for a slightly more verbose implementation.
-% gGrad = (1.0 ./ (1.0 + exp(-z)) .* (1 - (1.0 ./ (1.0 + exp(-z)))))
+%g = (1.0 ./ (1.0 + exp(-z)) .* (1 - (1.0 ./ (1.0 + exp(-z)))))
 % Since we already have sigmoid defined there's no real reason to use the line above.
 
 
